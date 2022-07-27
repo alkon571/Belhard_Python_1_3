@@ -24,7 +24,8 @@ def generate_fio(surname: str, name: str, patronymic: str) -> str:
     """
 
     fio = (surname + ' ' + name[0] + '.' + patronymic[0] + '.')
-    return fio
+    result = fio.title()
+    return result
 
 
 if __name__ == '__main__':
