@@ -18,9 +18,15 @@
 """
 
 
-def shortener(text):
+from unittest import result
 
-    return None
+
+def shortener(text):
+    n = 1
+    while n:
+        text, n = text.subn(r'\s*\([^()]*\)\s*', '', text)
+    return text
+
 
 
 if __name__ == '__main__':
