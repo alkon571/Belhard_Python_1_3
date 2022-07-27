@@ -12,6 +12,9 @@ str_sum("34", "5") -> 39
 """
 
 
+from unittest import result
+
+
 def str_sum(str1: str, str2: str) -> int:
     """
     Возвращает сумму чисел в двух строках
@@ -26,7 +29,8 @@ def str_sum(str1: str, str2: str) -> int:
     :rtype: int
     """
 
-    return None
+    result = int(str1) + int(str2)
+    return result
 
 
 if __name__ == '__main__':

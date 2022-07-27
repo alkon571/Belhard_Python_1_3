@@ -9,6 +9,7 @@ getsizeof() возвращает результат в байтах. В одно
 """
 from sys import getsizeof
 from typing import Any
+from unittest import result
 
 
 def size_in_kb(some_object: Any) -> str:
@@ -18,8 +19,10 @@ def size_in_kb(some_object: Any) -> str:
     :param some_object: любой объект
     :return: стока вида "1.23 кб"
     """
-
-    return None
+    import sys
+    s = (sys.getsizeof(some_object)) / 1024
+    result = round(s, 2)
+    return result
 
 
 if __name__ == '__main__':
