@@ -25,12 +25,13 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :rtype: tuple
     """
     import math
-    a = int(side_1)
-    b = int(side_2)
+    a = float(side_1)
+    b = float(side_2)
     c = math.sqrt((a**2) + (b**2))
     p = c + a + b
     s = (a * b) * 0.5
-    return [c, p, s]
+    result = (c, p, s)
+    return result
 
 
 if __name__ == '__main__':

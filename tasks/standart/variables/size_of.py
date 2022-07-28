@@ -22,7 +22,7 @@ def size_in_kb(some_object: Any) -> str:
     import sys
     s = (sys.getsizeof(some_object)) / 1024
     result = round(s, 2)
-    return result
+    return  f"{result} кб"
 
 
 if __name__ == '__main__':
